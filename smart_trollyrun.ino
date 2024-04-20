@@ -36,17 +36,9 @@ unsigned long Total = 0;
 
   
 void setup() {
-
-  mySerial.begin(19200); // SIM900 module
   Serial.begin(9600);    //For RFID Reader
 
-  lcd.begin(16, 2);//lcd init with 16*2
-
-/* Pin mode for Switches */
-  pinMode(Up,   INPUT_PULLUP);
-  pinMode(Down, INPUT_PULLUP);
-  pinMode(Ok,   INPUT_PULLUP); 
-  pinMode(Done, INPUT_PULLUP);    
+  lcd.begin(16, 2);//lcd init with 16*2   
 
 /* welcome note */
   lcd.clear();
