@@ -1,22 +1,8 @@
-#include <SoftwareSerial.h>
 #include <string.h>
-#include <LiquidCrystal.h> 
+#include <LiquidCrystal.h>
 
-//GSM
-#define RX_PIN 9
-#define TX_PIN 10
-
-//Switches
-#define Up   A0
-#define Down A1
-#define Ok   A2
-#define Done A3
-
-SoftwareSerial mySerial(RX_PIN, TX_PIN); // RX, TX
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2); 
 
-
-char SMSRead[100];
 char RFIDData[15];
 
 /* Store RFID card details */
